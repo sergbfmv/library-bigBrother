@@ -1,0 +1,22 @@
+{
+  "name": "library-bigbrother",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp",
+    "clear": "gulp clear"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergbfmv/library-bigBrother.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergbfmv/library-bigBrother/issues"
+  },
+  "homepage": "https://github.com/sergbfmv/library-bigBrother#readme"
+}
