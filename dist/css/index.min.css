@@ -1,1 +1,22 @@
-@font-face{font-family:Roboto;font-weight:400;font-display:swap;src:url(../fonts/Roboto-400.woff2) format("woff2"),"../fonts/Roboto-400.woff" format("woff")}@font-face{font-family:Roboto;font-weight:500;font-display:swap;src:url(../fonts/Roboto-500.woff2) format("woff2"),"../fonts/Roboto-500.woff" format("woff")}@font-face{font-family:Roboto;font-weight:700;font-display:swap;src:url(../fonts/Roboto-700.woff2) format("woff2"),"../fonts/Roboto-700.woff" format("woff")}body{font-family:Roboto,sans-serif}
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Roboto-400.woff2") format("woff2"), "../fonts/Roboto-400.woff" format("woff");
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Roboto-500.woff2") format("woff2"), "../fonts/Roboto-500.woff" format("woff");
+}
+@font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Roboto-700.woff2") format("woff2"), "../fonts/Roboto-700.woff" format("woff");
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIl92YXIuc2NzcyIsImluZGV4LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0U7RUFFSSxhQ0RRO0VERVIsYUNGZ0I7RURHaEI7RUFFRjs7QUFORjtFQUVJO0VBQ0EsYUNEZ0I7RURFaEI7RUFFRjs7QUFORjtFQUVJLGFDQ1E7RURBUjtFQUNBO0VBRUY7O0FDREo7RUFDRSIsImZpbGUiOiJpbmRleC5taW4uY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQG1peGluIGZvbnQoJG5hbWUsICR3ZWlnaHQpIHtcbiAgQGZvbnQtZmFjZSB7XG4gICAgZm9udDoge1xuICAgICAgZmFtaWx5OiAkbmFtZTtcbiAgICAgIHdlaWdodDogJHdlaWdodDtcbiAgICAgIGRpc3BsYXk6IHN3YXA7XG4gICAgfVxuICAgIHNyYzogdXJsKCcuLi9mb250cy8jeyAkbmFtZSB9LSN7ICR3ZWlnaHQgfS53b2ZmMicpIGZvcm1hdCgnd29mZjInKSxcbiAgICAoJy4uL2ZvbnRzLyN7ICRuYW1lIH0tI3sgJHdlaWdodCB9LndvZmYnKSBmb3JtYXQoJ3dvZmYnKTtcbiAgfVxufVxuIiwiQGltcG9ydCAndmFyJztcblxuQGluY2x1ZGUgZm9udChSb2JvdG8sIDQwMCk7XG5AaW5jbHVkZSBmb250KFJvYm90bywgNTAwKTtcbkBpbmNsdWRlIGZvbnQoUm9ib3RvLCA3MDApO1xuXG5ib2R5IHtcbiAgZm9udC1mYW1pbHk6IFJvYm90bywgc2Fucy1zZXJpZjtcbn1cbiJdfQ== */
