@@ -11,11 +11,11 @@
 <body>
   <section class="library">
     <header class="header library__header">
-      <div class="container">
-        <img src="img/logo.svg" alt="Логотип сайта Big Brother">
+      <div class="container header__container">
+        <img class="header__logo" src="img/logo.svg" alt="Логотип сайта Big Brother" width="61" height="40">
 
         <button class="header__btn-add">Добавить книгу</button>
-        <button class="header__btn header__btn_search">search</button>
+        <button class="header__btn header__btn_search" aria-label="Найти книгу"></button>
       </div>
     </header>
 
@@ -126,9 +126,9 @@
     </footer>
   </section>
 
-  <section class="book">
+  <section class="book hide">
     <header class="header book__header">
-      <div class="container">
+      <div class="container header__container">
         <button class="header__btn header__btn_back">Назад</button>
         <button class="header__btn header__btn_delete">Удалить</button>
       </div>
@@ -161,9 +161,10 @@
     </footer>
   </section>
 
-  <section class="add">
+  <section class="add hide">
+    <h2 class="visually-hidden">Добавить книгу</h2>
     <header class="header add__header">
-      <div class="container">
+      <div class="container header__container">
         <button class="header__btn header__btn_back">Назад</button>
         <button class="header__btn header__btn_search">Поиск</button>
       </div>

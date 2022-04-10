@@ -1,9 +1,8 @@
+@import 'normalize';
+@include normalize();
 @import 'var';
+@import 'font';
+@import 'default';
 
-@include font(Roboto, 400);
-@include font(Roboto, 500);
-@include font(Roboto, 700);
-
-body {
-  font-family: Roboto, sans-serif;
-}
+@import 'block/header';
+@import 'block/library';
