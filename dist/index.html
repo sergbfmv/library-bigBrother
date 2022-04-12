@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Big Brother Library</title>
   <link rel="stylesheet" href="css/index.min.css">
-  <script src="js/index.min.js"></script>
+  <script src="js/index.min.js" defer></script>
 </head>
 <body>
   <section class="library">
@@ -72,7 +72,7 @@
       <h2 class="visually-hidden">Список книг</h2>
       <ul class="library__list">
         <li class="library__item">
-          <a href="/book">
+          <a href="/book" data-navigo>
             <article class="cart">
               <div class="cart__wrapper">
                 <img src="img/1984.jpg" alt="Обложка книги 1984" class="cart__image">
@@ -95,7 +95,7 @@
         </li>
 
         <li class="library__item">
-          <a href="/book">
+          <a href="/book" data-navigo>
             <article class="cart">
               <div class="cart__wrapper">
                 <img src="img/temp.jpg" alt="Обложка книги 1984" class="cart__image">
@@ -121,7 +121,11 @@
 
     <footer class="footer">
       <button class="footer__btn library__add-btn">
-
+        <svg width="44" height="44" viewbox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="22" cy="22" r="22" fill="currentColor"/>
+          <rect x="21.7767" y="9.21667" width="0.433333" height="25.5667" fill="#242424" stroke="white" stroke-width="0.433333"/>
+          <rect x="9.21667" y="22.2233" width="0.433333" height="25.5667" transform="rotate(-90 9.21667 22.2233)" fill="#242424" stroke="white" stroke-width="0.433333"/>
+          </svg>
       </button>
     </footer>
   </section>
