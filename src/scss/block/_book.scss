@@ -20,6 +20,13 @@
   }
 
   &__label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    padding: 18px 103px;
+    border-radius: 30px;
+    border: none;
+
     &:nth-child(2) {
       display: none;
     }
