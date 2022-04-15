@@ -4,11 +4,12 @@
 
   width: 100%;
   position: absolute;
-  top: -$top - $height;
+  top: -$top -$height;
   right: 0;
+  transition: transform .5s ease-in-out;
 
   &_active {
-    top: $top;
+    transform: translateY($top * 2 + $height);
   }
 
   &__form {
@@ -21,6 +22,14 @@
     background-color: $white;
     border-radius: 20px;
     border: 0;
+    padding: 3px 40px 3px 15px;
+    border: 0;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+
+    &:focus {
+      outline-color: $secondaryDark;
+    }
   }
 
   &__button {
