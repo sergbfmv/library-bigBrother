@@ -1,0 +1,31 @@
+.star {
+  &__list {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  &__radio {
+    position: absolute;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+
+  &__icon {
+    background-image: url('../img/star-o.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 36px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+  }
+
+  &__icon:hover,
+  &__icon:hover ~ &__icon,
+  &__radio:checked ~ &__icon {
+    background-image: url('../img/star.svg');
+  }
+
+}

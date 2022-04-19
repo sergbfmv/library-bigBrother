@@ -10,10 +10,36 @@
 
   &_active {
     transform: translateY($top * 2 + $height);
+
+    @include tablet {
+      transform: translateY($top * 3 + $height);
+    }
+
+    @include laptop {
+      transform: translateY($top * 5 + $height);
+    }
+
+    @include desktop {
+      transform: translateY($top * 6.3 + $height);
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
   }
 
   &__form {
     position: relative;
+
+    @include tablet {
+      width: 462px;
+    }
+
+    @include laptop {
+      width: 580px;
+    }
   }
 
   &__input {
