@@ -1,6 +1,14 @@
 .add {
   &__form {
     padding: 14px 0;
+
+    @include laptop {
+      padding: 24px 114px;
+    }
+
+    @include desktop {
+      padding: 14px 177px;
+    }
   }
 
   &__container {
@@ -14,6 +22,11 @@
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 8px;
+
+    @include laptop {
+      font-size: 40px;
+      line-height: 49px;
+    }
   }
 
   &__subtitle {
@@ -21,6 +34,10 @@
     font-size: 12px;
     line-height: 100%;
     margin-bottom: 15px;
+
+    @include laptop {
+      font-size: 14px;
+    }
   }
 
   &__step {
@@ -28,6 +45,17 @@
     font-size: 14px;
     line-height: 100%;
     margin-bottom: 30px;
+
+    @include tablet {
+      margin-bottom: 50px;
+    }
+
+    @include laptop {
+      margin-bottom: 40px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+    }
   }
 
   &__label {
@@ -37,6 +65,10 @@
     line-height: 100%;
     padding-left: 8px;
     margin-bottom: 8px;
+
+    @include tablet {
+      padding-left: 16px;
+    }
   }
 
   &__text {
@@ -55,5 +87,22 @@
     height: 120px;
     resize: none;
     font-size: 14px;
+  }
+
+  &__btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    width: 320px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: $primary;
+    border: 0;
+    color: $white;
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+      background-color: $primaryLight;
+    }
   }
 }

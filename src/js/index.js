@@ -11,6 +11,7 @@ const fieldsBtnSort = document.querySelector('.fields__btn_sort')
 const fieldsListSort = document.querySelector('.fields__list_sort')
 const fieldsBtnFilter = document.querySelector('.fields__btn_filter')
 const fieldsListFilter = document.querySelector('.fields__list_filter')
+const form = document.querySelector('.add__form')
 
 const router = new Navigo('/', {
   hash: true,
@@ -51,6 +52,7 @@ addBtns.forEach(btn => {
 
 backBtn.forEach(btn => {
   btn.addEventListener('click', () => {
+    form.reset()
     router.navigate('/')
   })
 })
@@ -90,7 +92,8 @@ controlField(fieldsBtnFilter, fieldsListFilter, fieldsListSort);
 function changeFieldset() {
   const fieldsets = document.querySelectorAll('.add__fieldset')
   const addBtn = document.querySelector('.add__btn')
-  const form = document.querySelector('.add__form')
+
+
 
   let count = 0
 
@@ -131,5 +134,6 @@ function changeFieldset() {
     }
   })
 }
+
 
 changeFieldset()
