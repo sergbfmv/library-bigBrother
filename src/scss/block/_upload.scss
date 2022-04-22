@@ -10,6 +10,10 @@
     background-size: cover;
     cursor: pointer;
     border-radius: 6px;
+
+    &_active {
+      background-image: none;
+    }
   }
 
   &__preview {
