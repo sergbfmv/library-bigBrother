@@ -1,4 +1,6 @@
 import {router} from './router.js'
+import { addBooks } from './serverBook.js'
+import toBase64 from './toBase64.js'
 import { clearPreview } from './upload.js'
 
 const fieldsets = document.querySelectorAll('.add__fieldset')
@@ -8,14 +10,17 @@ const btnBack = document.querySelector('.add__btn_back')
 
 let count = 0
 
-function sendBook() {
-  const data = true
+async function sendBook() {
+  const formData = new FormData(form)
+  const data = Object.fromEntries(formData)
+  data.image = await toBase64(data.image)
+  const book = await addBooks(data)
 
-  if (data) {
+
+  if (book) {
     form.reset()
     clearPreview()
     router.navigate('/')
-    count = 0
     addBtn.textContent = 'Далее'
   }
 }

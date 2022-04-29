@@ -9,7 +9,7 @@ const add = document.querySelector('.add')
 const addBtns = document.querySelectorAll('.header__btn-add, .library__add-btn')
 const backBtn = document.querySelector('.book__btn_back')
 
-export const router = new Navigo('/', {
+export const router = new Navigo(location.pathname, {
   hash: true,
 })
 
@@ -20,21 +20,21 @@ function closeAllPAge() {
 }
 
 router.on({
-  '/': () => {
+  [location.pathname]: () => {
     closeAllPAge()
     library.classList.remove('hide')
     search.classList.remove('search_active')
     document.body.classList.remove('body_gradient')
     renderListBooks()
   },
-  'book': ({params: {id}}) => {
+  [location.pathname + 'book']: ({params: {id}}) => {
     closeAllPAge()
     book.classList.remove('hide')
     search.classList.remove('search_active')
     document.body.classList.add('body_gradient')
     renderBook(id)
   },
-  'add': () => {
+  [location.pathname + 'add']: () => {
     closeAllPAge()
     add.classList.remove('hide')
     search.classList.remove('search_active')
