@@ -12,6 +12,7 @@
       top: -63px;
       background-color: #FF0000;
       filter: blur(200px);
+      z-index: 1;
 
       @include tablet {
         content: none;
@@ -22,6 +23,7 @@
   &__titles {
     margin-bottom: 20px;
   }
+
   &__title {
     font-weight: 700;
     font-size: 26px;
@@ -38,7 +40,6 @@
   }
 
   &__list-container {
-
     @media (max-width: 375px) {
       padding: 0 12px;
     }
@@ -48,6 +49,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px 26px;
+    max-width: 780px;
   }
 
   &__add-btn {

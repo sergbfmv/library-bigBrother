@@ -1,7 +1,9 @@
 import {getBooks, getLabels, API_URL} from './serverBook.js'
+import {declOfNum} from './declOfNum.js'
 
 const libraryList = document.querySelector('.library__list')
 const fieldList = document.querySelector('.fields__list_filter')
+const libraryCount = document.querySelector('.library__count')
 
 export const data = {
   books: [],
@@ -35,6 +37,7 @@ function getStars(rating) {
 
 export function renderList(books = data.books) {
   libraryList.textContent = ''
+  libraryCount.textContent = declOfNum(books.length, ['книга', 'книги', 'книг'])
 
   const items = books.map(({author, description, id, image, label, rating, title}) => { //data may be not-destructurized like .....(data => {your code})
     const item = document.createElement('li')
